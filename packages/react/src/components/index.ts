@@ -53,8 +53,4 @@ addIcons({
   'search-sharp': searchSharp,
 });
 
-// TODO: defineCustomElements() is asyncronous
-// We need to use the promise
-if (typeof window !== 'undefined') {
-  defineCustomElements(window);
-}
+defineCustomElements();
